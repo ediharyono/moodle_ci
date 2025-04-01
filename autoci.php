@@ -27,6 +27,11 @@ $column11 = 'lastname';
 $column12 = 'email';
 $column13 = 'emailstop'; 
 $column14 = 'phone1'; 
+$column15 = 'phone2'; 
+$column16 = 'institution'; 
+$column17 = 'department'; 
+$column18 = 'picture';
+$column19 = 'description';
 
 
 
