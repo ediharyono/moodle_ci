@@ -6,6 +6,7 @@ Login sebagai Admin Moodle.
 
 Buka:
 Site administration → Advanced features → Enable web services ✅
+///admin/settings.php?section=optionalsubsystems
 
 B. Buat Role Web Service (Opsional tapi direkomendasikan):
 Site admin → Users → Permissions → Define roles
