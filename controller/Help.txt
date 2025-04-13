@@ -1,0 +1,51 @@
+1. Setup Moodle Web Service
+Sebelum bisa dipanggil dari CodeIgniter, kamu perlu aktifkan dan konfigurasi Web Service di Moodle:
+
+A. Aktifkan Web Service:
+Login sebagai Admin Moodle.
+
+Buka:
+Site administration → Advanced features → Enable web services ✅
+
+B. Buat Role Web Service (Opsional tapi direkomendasikan):
+Site admin → Users → Permissions → Define roles
+
+Tambahkan role baru: webserviceuser
+
+Berikan kemampuan seperti:
+
+moodle/course:view
+
+moodle/role:assign
+
+enrol/manual:enrol
+
+moodle/user:view
+
+dll sesuai kebutuhan
+
+C. Buat user khusus Web Service (atau pakai yang sudah ada):
+Users → Add new user
+
+Assign ke role webserviceuser
+
+D. Buat External Service:
+Site Admin → Server → Web Services → External services
+
+Add new service: CodeIgniterAPI ✅
+
+Centang “Enabled”
+
+E. Tambahkan fungsi ke service:
+Klik edit → Add functions
+
+Tambahkan fungsi:
+
+enrol_manual_enrol_users
+
+F. Buat token:
+Site Admin → Server → Web Services → Manage tokens
+
+Add token untuk user dan service tadi.
+
+Simpan token (contoh: abcdef1234567890)
